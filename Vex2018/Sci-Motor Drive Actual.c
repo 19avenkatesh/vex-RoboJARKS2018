@@ -15,8 +15,8 @@ task main()
 		motor(backRightWheelMotor) = vexRT(Ch2);
 		motor(backLeftWheelMotor) = vexRT(Ch1);
 
-		motor[rightScissorMotor] = vexRT(Btn5U)*127-vexRT(Btn5D)*127;
-		motor[leftScissorMotor] = vexRT(Btn5U)*127-vexRT(Btn5D)*127;
+		motor[rightScissorMotor] = vexRT(Btn5U)*127+vexRT(Btn5D)*-127;
+		motor[leftScissorMotor] = vexRT(Btn5U)*127+vexRT(Btn5D)*-127;
 	}
 }
 
