@@ -22,12 +22,16 @@ task main()
 	motor(backRightWheelMotor) = 127;
 	wait1000Msec;
 
+	//move forward from starting positions
+
 	motor(frontRightWheelMotor) = 127;
 	motor(frontLeftWheelMotor) = -0;
 	motor(backLeftWheelMotor) = -0;
 	motor(backRightWheelMotor) = 127;
 	wait1000Msec;
 
+	//turn towards flag
+
 	motor(frontRightWheelMotor) = 127;
 	motor(frontLeftWheelMotor) = 127;
 	motor(backLeftWheelMotor) = 127;
@@ -35,17 +39,43 @@ task main()
 	wait1000Msec;
 
 
-	//move forward for 1 second at 127 power
+	//move forward for 1 second at 127 power towards flag and hit flag
 
 
-	motor(rightClawMotor) = 50;
-	motor(leftClawMotor) = 50;
-	wait1000Msec;
-
-	//move claw up I think for 1 second
 
 
 	motor(frontRightWheelMotor) = -127;
 	motor(frontLeftWheelMotor) = 127;
 	motor(backLeftWheelMotor) = 127;
 	motor(backRightWheelMotor) = -127;
+	wait2000Msec
+
+	//u turn from facing flags to facing platform
+
+
+		motor(frontRightWheelMotor) = 127;
+	motor(frontLeftWheelMotor) = 127;
+	motor(backLeftWheelMotor) = 127;
+	motor(backRightWheelMotor) = 127;
+	wait2000Msec;
+
+	//going forward toward platform
+
+		motor(frontRightWheelMotor) = 0;
+	motor(frontLeftWheelMotor) = 127;
+	motor(backLeftWheelMotor) = 127;
+	motor(backRightWheelMotor) = 0;
+	wait1000Msec;
+
+	//turning towards platform
+
+		motor(frontRightWheelMotor) = 127;
+	motor(frontLeftWheelMotor) = 127;
+	motor(backLeftWheelMotor) = 127;
+	motor(backRightWheelMotor) = 127;
+	wait1000Msec;
+
+	//moving forward onto platform
+
+
+
