@@ -25,8 +25,8 @@ task main()
 	//move forward from starting positions
 
 	motor(frontRightWheelMotor) = 127;
-	motor(frontLeftWheelMotor) = -0;
-	motor(backLeftWheelMotor) = -0;
+	motor(frontLeftWheelMotor) = 0;
+	motor(backLeftWheelMotor) = ;
 	motor(backRightWheelMotor) = 127;
 	wait1000Msec;
 
