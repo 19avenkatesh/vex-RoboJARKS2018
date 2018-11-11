@@ -12,10 +12,12 @@ task main()
 {
 	while(1==1) {
 		motor(frontRightWheelMotor) = vexRT(Ch2);
-		motor(frontLeftWheelMotor) = vexRT(Ch1);
+		motor(frontLeftWheelMoe4wrcccccccccc	tor) = vexRT(Ch1);
 
 		motor[rightScissorMotor] = vexRT(Btn5U)*127+vexRT(Btn5D)*-127;
 		motor[leftScissorMotor] = vexRT(Btn5U)*127+vexRT(Btn5D)*-127;
+		motor[rightClaw] = vexRT(Btn5U)*64+vexRT(Btn5D)*-64;
+		motor[leftClaw] = vexRT(Btn5U)*64+vexRT(Btn5D)*-64;
 	}
 }
 
